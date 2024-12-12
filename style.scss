@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+$text-color: rgb(173, 173, 173);
+$txt-white: #fff;
+$main-backg: rgb(241, 236, 255);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#main-section {
+  min-height: 100vh;
+  background-color: $main-backg;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification-blank {
+  max-width: 45%;
+  position: relative;
+
+  .notification-bell {
+    position: absolute;
+    background-color: $txt-white;
+    padding: 0.1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    top: -2.5rem;
+    right: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 7px 0px gray;
+
+    cursor: pointer;
+
+    .notification-bell i {
+      color: $text-color;
+    }
+  }
+
+  .notification-container {
+    background-color: $txt-white;
+    box-shadow: 0px 0px 7px 0px gray;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .notification-container .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .notification-container .title-wrapper small,
+  .notification .heading small {
+    color: rgb(173, 173, 173);
+  }
+
+  .notification-container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    color: rgb(173, 173, 173);
+  }
+}
+
+.notification {
+  background-color: $txt-white;
+  min-width: 30%;
+  box-shadow: 0px 0px 7px 0px gray;
+
+  position: relative;
+
+  .notification-bell {
+    position: absolute;
+    background-color: $txt-white;
+    padding: 0.1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    top: -2.5rem;
+    right: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 7px 0px gray;
+
+    cursor: pointer;
+  }
+}
+
+.notification .heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+
+.profile-row {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 5px;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.profile-row .image {
+  width: 15%;
+}
+
+.profile-row img {
+  object-fit: cover;
+
+  border-radius: 50%;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+}
+
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 5px;
+}
+
+.btn-wrapper .btn {
+  width: 50%;
+  padding: 0.3rem;
+  border-radius: 7px;
+  border: none;
+}
+
+.btn-wrapper .btn:nth-of-type(1) {
+  background-color: rgb(111, 65, 226);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-wrapper .btn:nth-of-type(2) {
+  background-color: rgba(180, 180, 180, 0.532);
+  cursor: pointer;
+}
+
+.main-button {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+}
+
+.main-button button {
+  background-color: rgb(111, 65, 226);
+  color: #fff;
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.notification-bell i {
+  color: $text-color;
+}
